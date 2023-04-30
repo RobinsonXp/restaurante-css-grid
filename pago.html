@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,39 @@
     <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/pago.css">
 </head>
-<body>
-    <header>
-        <a href="#" class="btn_menu btn_generico">Menu</a>
-        <!-- <img src="https://cdn.pixabay.com/photo/2023/04/09/10/32/little-pied-cormorant-7911240_1280.jpg" alt="placeholder"> -->
-        <a href="login.html" class="btn_menu btn_generico">Login</a>
-        <a href="#" class="btn_menu btn_generico">Cart</a>
+
+<body class="grid-container">
+    <header class="header">
+        <div class="header-izquiera-row">
+            <a href="#" class="">
+                <img src="imagenes/icono/menu-100.png" alt="carrito" style="width: 16px">
+            </a>
+        </div>
+        <p class="titulo_amarillo" style="font-size: 1.5rem;">Little <span class="titulo_verde">Lemmon</span></p>
+        <div class="header-derecha-row">
+            <a href="login.html" class="titulo_link">Login</a>
+            <a href="reserva.html" class="">
+                <img src="imagenes/icono/carrito-16.png" alt="carrito">
+            </a>
+        </div>
     </header>
 
-    <main>
+    <main class="main">
         <div class="div_contenedor">
-            <h1>Método de pago</h1>
-        </div>        
-        <div class="div_contenedor div_pago">
-            <div>
-                <a href="resumen.html" class="btn_menu btn_generico btn_pago">PAGO 1</a>
-                <a href="resumen.html" class="btn_menu btn_generico btn_pago">PAGO 3</a>
-            </div>
-            <div>
-                <a href="resumen.html" class="btn_menu btn_generico btn_pago">PAGO 2</a>
-                <a href="resumen.html" class="btn_menu btn_generico btn_pago">PAGO 4</a>
+            <h1 class="titulo_verde">Método de pago</h1>
+            <div class="div_pago">
+                <a href="resumen.html" class="btn_pago">PAGO 1</a>
+                <a href="resumen.html" class="btn_pago">PAGO 2</a>
+                <a href="resumen.html" class="btn_pago">PAGO 3</a>
+                <a href="resumen.html" class="btn_pago">PAGO 4</a>
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="div_contenedor">
             <p> </p>
         </div>
     </footer>
 </body>
+
 </html>

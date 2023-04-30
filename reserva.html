@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,32 @@
     <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/reserva.css">
 </head>
-<body>
-    <header>
-        <a href="#" class="btn_menu btn_generico">Menu</a>
-        <!-- <img src="https://cdn.pixabay.com/photo/2023/04/09/10/32/little-pied-cormorant-7911240_1280.jpg" alt="placeholder"> -->
-        <a href="login.html" class="btn_menu btn_generico">Login</a>
-        <a href="#" class="btn_menu btn_generico">Cart</a>
+
+<body class="grid-container">
+    <header class="header">
+        <div class="header-izquiera-row">
+            <a href="#" class="">
+                <img src="imagenes/icono/menu-100.png" alt="carrito" style="width: 16px">
+            </a>
+        </div>
+        <p class="titulo_amarillo" style="font-size: 1.5rem;">Little <span class="titulo_verde">Lemmon</span></p>
+        <div class="header-derecha-row">
+            <a href="login.html" class="titulo_link">Login</a>
+            <a href="reserva.html" class="">
+                <img src="imagenes/icono/carrito-16.png" alt="carrito">
+            </a>
+        </div>
     </header>
 
-    <main>
+    <main class="main">
         <div class="div_contenedor">
-            <h1>Reserva una mesa</h1>
-        </div>        
-        <div class="div_contenedor div_mesa">
-            <div>
-                <a href="#" class="btn_menu btn_generico btn_mesa">T1</a>
-                <a href="#" class="btn_menu btn_generico btn_mesa">T3</a>
+            <h1 class="titulo_verde">Reserva una mesa</h1>
+            <div class="div_mesa">
+                <a href="#" class="btn_mesa">T1</a>
+                <a href="#" class="btn_mesa">T2</a>
+                <a href="#" class="btn_mesa">T3</a>
+                <a href="#" class="btn_mesa">T4</a>
             </div>
-            <div>
-                <a href="#" class="btn_menu btn_generico btn_mesa">T2</a>
-                <a href="#" class="btn_menu btn_generico btn_mesa">T4</a>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="div_contenedor">
             <form action="#">
                 <div class="form-group">
                     <label for="fecha">Fecha:</label>
@@ -49,8 +51,14 @@
                 <a href="pago.html" class="btn_menu btn_generico">PAGAR</a>
                 <!-- <button type="submit" class="btn_menu btn_generico">PAGAR</button> -->
             </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="div_contenedor">
+            
             <p> </p>
         </div>
     </footer>
 </body>
+
 </html>

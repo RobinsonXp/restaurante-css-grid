@@ -1,28 +1,54 @@
 .div_contenedor {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 50px 20px;
+    padding: 10px 20px;
     background-color: #f7f7f7;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .div_mesa {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     margin: 20px;
     border: 1px solid black;
     border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .btn_mesa {
     display: flex;
-    margin: 20px;
-    height: 100px;
-    border-radius: 50px;
+    color: #28b136;
+    text-decoration: none;
+    width: 100px;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    height: 100px;
+    border-radius: 75px;
+    border: 1px solid rgb(250, 190, 40);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn_mesa:hover {
+    background-color: #28b136;
+    color: white;
+}
+
+form {
+    margin: 50px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 .form-group {
@@ -50,6 +76,66 @@ input[type="password"] {
     width: 100%;
 }
 
-p {
-    margin-bottom: 100%;
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #fcf9f9;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #fcf9f9;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #fcf9f9;
+    padding: 0;
+}
+
+.main {
+    grid-area: main;
+    background-color: #fcf9f9;
+    /* #85aedd*/
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #fcf9f9;
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template:
+        "header" 55px
+        "main" auto
+        "footer" 50px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        /* grid-template-columns: 200px auto;
+      grid-template-rows: 100px 50px auto 100px;
+      grid-template-areas: 
+      "header  header"
+      "navbar  navbar"
+      "sidebar main"
+      "footer  footer"; */
+
+        grid-template:
+            "header" 75px
+            "main" auto
+            "footer" 70px;
+    }
+
+    .btn_mesa {
+        width: 120px;
+        height: 120px;
+    }
 }

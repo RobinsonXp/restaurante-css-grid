@@ -1,4 +1,4 @@
-.btn_generico {
+/* .btn_generico {
   background-color: darkgrey;
   color: white;
   text-decoration: none;
@@ -38,4 +38,84 @@ h3 {
 
 p{
   margin-bottom: 100%;
+} */
+
+.div_contenedor {
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+h1, h3{
+  margin-bottom: 70px;
+  font-style: italic;
+}
+
+.grid-container>* {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #fcf9f9;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #fcf9f9;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fcf9f9;
+  padding: 0;
+}
+
+.main {
+  grid-area: main;
+  background-color: #fcf9f9;
+  /* #85aedd*/
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #fcf9f9;
+}
+
+.grid-container {
+  display: grid;
+  gap: 5px;
+  grid-template:
+      "header" 55px
+      "main" auto
+      "footer" 50px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+      /* grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "sidebar main"
+    "footer  footer"; */
+
+      grid-template:
+          "header" 75px
+          "main" auto
+          "footer" 70px;
+  }
+
+  .btn_mesa {
+      width: 120px;
+      height: 120px;
+  }
 }

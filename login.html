@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/login.css">
 </head>
 
-<body>
-    <header>
-        <a href="#" class="btn_menu btn_generico">Menu</a>
-        <!-- <img src="https://cdn.pixabay.com/photo/2023/04/09/10/32/little-pied-cormorant-7911240_1280.jpg" alt="placeholder"> -->
-        <a href="#" class="btn_menu btn_generico">Login</a>
-        <a href="#" class="btn_menu btn_generico">Cart</a>
+<body class="grid-container">
+    <header class="header">
+        <div class="header-izquiera-row">
+            <a href="#" class="">
+                <img src="imagenes/icono/menu-100.png" alt="carrito" style="width: 16px">
+            </a>
+        </div>
+        <p class="titulo_amarillo" style="font-size: 1.5rem;">Little <span class="titulo_verde">Lemmon</span></p>
+        <div class="header-derecha-row">
+            <a href="login.html" class="titulo_link">Login</a>
+            <a href="reserva.html" class="">
+                <img src="imagenes/icono/carrito-16.png" alt="carrito">
+            </a>
+        </div>
     </header>
-    <main>
+    <main class="main">
         <div class="div_contenedor">
-            <h1>Bienvenido a Pequeño Limon</h1>
+            <h1 class="titulo_verde" style="font-size: 2em">Bienvenido a <span class="titulo_amarillo">Pequeño Limon</span></h1>
             <form action="#">
                 <div class="form-group">
                     <label for="usuario">Usuario:</label>
@@ -28,14 +37,17 @@
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password">
                 </div>
+                <br>
+                <br>
                 <button type="submit" class="btn_menu btn_generico">Iniciar sesión</button>
             </form>
             <br>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="div_contenedor">
-            <p>Sin cuenta? cree una <a href="registro.html" class="">aquí</a></p>
+            <p class="titulo_amarillo" style="font-style: italic; font-size: 1em; text-shadow: 3px 3px 2px #696;">Sin cuenta? cree una 
+                <a href="registro.html" class="" style="text-decoration: none; color: rgb(250, 190, 40);">aquí</a></p>
         </div>
     </footer>
 </body>
